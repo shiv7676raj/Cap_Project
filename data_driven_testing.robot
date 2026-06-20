@@ -1,13 +1,13 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    DataDriver   file=${EXECDIR}/Users_Details.csv  dialect=excel
+Library    DataDriver   file=${EXECDIR}/Users_Details.csv   dialect=excel
 
-Test Setup    Open Register Page
-Test Teardown  Close Browser
-Test Template  Register Users
+Test Setup      Open Register Page
+Test Teardown       Close Browser
+Test Template       Register Users
 
 *** Variables ***
-${baseurl}=    https://parabank.parasoft.com/parabank/index.htm
+${baseurl}    https://parabank.parasoft.com/parabank/index.htm
 ${first_name}  xpath=//input[@id="customer.firstName"]
 ${last_name}  xpath=//input[@id="customer.lastName"]
 ${address_street}  xpath=//input[@id="customer.address.street"]
@@ -22,9 +22,7 @@ ${confirm_password}  xpath=//input[@id="repeatedPassword"]
 ${submit_btn}  xpath=//input[@value="Register"]
 
 *** Test Cases ***
-Test Case For Data Driven   ${first}    ${last}    ${street}    ${city}    ${state}    ${zip}    ${phone}    ${ssn}    ${username}    ${password}    ${confirm}
-   [Documentation]      Data driven testing using csv
-   [Tags]   datadriver
+Register User Test
 
 *** Keywords ***
 Open Register Page

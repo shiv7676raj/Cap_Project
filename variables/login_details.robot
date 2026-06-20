@@ -1,4 +1,4 @@
 *** Variables ***
-${NEW_USERNAME}    piya
-${NEW_PASSWORD}    0987
+${NEW_USERNAME}    rverma
+${NEW_PASSWORD}    4567
 ${LOGOUT}   xpath=//a[text()='Log Out']

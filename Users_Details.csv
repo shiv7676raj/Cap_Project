@@ -1,4 +1,4 @@
-*** Test Cases ***,${Firstname},${Lastname},${Address},${City},${State},${Zipcode},${Phno},${SSN},${Username},${Password},${Confirm}
+*** Test Cases ***,${first},${last},${street},${city},${state},${zip},${phone},${ssn},${username},${password},${confirm}
 Register rsharma,Rohan,Sharma,12 MG Road,Jaipur,Rajasthan,302001,9876543220,556677,rsharma,Jai@45,Jai@45
 Register apatel,Ananya,Patel,45 Satellite Road,Ahmedabad,Gujarat,380015,9876543221,667788,apatel,Guj$789x,Guj$789x
 Register vsingh,Vikram,Singh,78 Connaught Place,New Delhi,Delhi,110001,9876543222,778899,vsingh,Delhi#12,Delhi#12
