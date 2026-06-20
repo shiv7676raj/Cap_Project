@@ -1,0 +1,6 @@
+qa:
+  baseurl:  'https://parabank.parasoft.com/parabank/index.htm'
+  browser: 'chrome'
+dev:
+  baseurl: 'https://parabank.parasoft.com/parabank/index.htm'
+  browser: 'chrome'

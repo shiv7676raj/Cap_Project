@@ -1,0 +1,6 @@
+*** Test Cases ***,${Firstname},${Lastname},${Address},${City},${State},${Zipcode},${Phno},${SSN},${Username},${Password},${Confirm}
+Register rsharma,Rohan,Sharma,12 MG Road,Jaipur,Rajasthan,302001,9876543220,556677,rsharma,Jai@45,Jai@45
+Register apatel,Ananya,Patel,45 Satellite Road,Ahmedabad,Gujarat,380015,9876543221,667788,apatel,Guj$789x,Guj$789x
+Register vsingh,Vikram,Singh,78 Connaught Place,New Delhi,Delhi,110001,9876543222,778899,vsingh,Delhi#12,Delhi#12
+Register pkumar,Priya,Kumar,34 Park Street,Kolkata,West Bengal,700016,9876543223,889900,pkumar,Kol@2024!,Kol@2024!
+Register skrishnan,Sneha,Krishnan,21 Church Street,Chennai,Tamil Nadu,600002,9876543224,990011,skrishnan,Chn#9988,Chn#9988

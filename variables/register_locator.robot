@@ -1,0 +1,15 @@
+*** Variables ***
+${register}     xpath=//a[text()='Register']
+${first_name}           xpath=//input[@id='customer.firstName']
+${last_name}            xpath=//input[@id='customer.lastName']
+${address_street}             xpath=//input[@id='customer.address.street']
+${address_city}                xpath=//input[@id='customer.address.city']
+${address_state}               xpath=//input[@id='customer.address.state']
+${address_zip}                 xpath=//input[@id='customer.address.zipCode']
+${phone_no}               xpath=//input[@id='customer.phoneNumber']
+${ss_no}                 xpath=//input[@id='customer.ssn']
+${reg_username}            xpath=//input[@id='customer.username']
+${reg_password}            xpath=//input[@id='customer.password']
+${confirm_password}    xpath=//input[@id='repeatedPassword']
+${submit_btn}          xpath=//input[@value='Register']
+${reg_success_msg}         xpath=//*[@id='rightPanel']//p
