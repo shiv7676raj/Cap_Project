@@ -1,0 +1,15 @@
+datasources:067a83aeca6e4a47603290c623aae3c030f4ac20
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
+suitesfrom:no-suites-from-option
+file:328f013891a781ecce0f61ddf4da6bd58229f043
+--suite Tests.1Ui.01 Register Test
+--suite Tests.1Ui.02 Login Test
+--suite Tests.1Ui.03 Account Test
+--suite Tests.1Ui.04 Transfer Test
+--suite Tests.2Hybrid.Hybrid 01 Test
+--suite Tests.2Hybrid.Hybrid 02 Test
+--suite Tests.2Hybrid.Hybrid 03 Test
+--suite Tests.3Api.Api Test Cases
+--suite Tests.4Performance.Api Performance Test
+--suite Tests.4Performance.Ui Performance Test
+--suite Tests.5Negative.Negative Test

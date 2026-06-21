@@ -7,7 +7,6 @@ ${result_msg}     xpath=//div[@id='openAccountResult']//p
 ${new_account_id}   xpath=//a[@id='newAccountId']
 ${savings_type_index}         1
 ${checking_type_index}        0
-
 ${accounts_overview}      xpath=//a[text()='Accounts Overview']
 ${accounts_table}       xpath=//table[@id='accountTable']
 

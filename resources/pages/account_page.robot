@@ -4,7 +4,7 @@ Resource   ../../variables/account_locator.robot
 
 *** Keywords ***
 Create a Savings Account
-    [Documentation]    Creates a new saving account for the logged-in user
+    [Documentation]    Creates a new saving account
     Click Element    ${open_account}
     Wait Until Element Is Visible    ${account_type}    10s
     Select From List By Index    ${account_type}    ${savings_type_index}
@@ -17,8 +17,7 @@ Create a Savings Account
     Set Suite Variable    ${SAVINGS_ACCOUNT_ID}   ${savings_account_id}
 
 Create a Checking Account
-    [Documentation]    Creates a new saving account for the logged-in user
-    #Wait Until Element Is Visible    ${open_account}    10s
+    [Documentation]    Creates a new checking type account
     Click Element    ${open_account}
     Wait Until Element Is Visible    ${account_type}    10s
     Select From List By Index    ${account_type}    ${checking_type_index}
@@ -32,7 +31,7 @@ Create a Checking Account
     Set Suite Variable      ${CHECKING_ACCOUNT_ID}    ${checking_account_id}
 
 Accounts Overview Displays Created Accounts
-    [Documentation]    to verify a created account is visible in the Accounts Overview page
+    [Documentation]    To verify created accounts are visible in the Accounts Overview page
     [Arguments]     ${savings_account_id}    ${checking_account_id}
     Click Element    ${accounts_overview}
     Sleep    5s

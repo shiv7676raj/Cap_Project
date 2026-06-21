@@ -15,5 +15,8 @@ Open Application
 Launch Application
     Open Application
     Initialize API Suite
+Capture Screenshot
+    [Documentation]    Captures screenshots for debugging
+    Capture Page Screenshot     screenshots/${TEST NAME}.png
 Close Application
     Close All Browsers

@@ -5,9 +5,7 @@ Resource   ../../variables/register_locator.robot
 *** Keywords ***
 Register New User
     [Documentation]    Opens the register page of the application
-    [Arguments]    ${first}    ${last}    ${street}    ${city}
-    ...            ${state}    ${zip}    ${phone}    ${ssn}
-    ...            ${username}    ${password}
+    [Arguments]    ${first}    ${last}    ${street}    ${city}    ${state}    ${zip}    ${phone}    ${ssn}    ${username}    ${password}
     Click Element    ${register}
     Input Text    ${first_name}   ${first}
     Input Text    ${last_name}   ${last}

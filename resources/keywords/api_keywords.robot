@@ -12,6 +12,7 @@ Initialize API Suite
     ...    https://parabank.parasoft.com/parabank/services/bank
     ...    headers=${headers}
     ...    verify=${False}
+    ...    timeout=10
 
 Get Customer Accounts
     [Arguments]    ${customer_id}
@@ -36,7 +37,7 @@ Get Account Balance
     [Arguments]    ${account_id}
     ${response}=    Get Account Details    ${account_id}
     ${account}=    Evaluate    $response.json()
-    ${balance}=    Get From Dictionary  ${account}  balance
+    ${balance}=    Get From Dictionary  ${account}  balance    default=0
     RETURN    ${balance}
 
 Get Account By Id

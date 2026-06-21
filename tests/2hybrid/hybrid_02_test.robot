@@ -8,4 +8,5 @@ Suite Teardown    Close Application
 *** Test Cases ***
 TC-E2E-02 Transfer Debit Equals Credit - No Money Lost
     Perform Transfer For API Validation
+    Capture Screenshot
     Verify Transfer Debit Equals Credit

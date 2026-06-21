@@ -9,5 +9,4 @@ Suite Teardown   Close Application
 *** Test Cases ***
 TC-REG-UI-02
     [Documentation]    To login with registered credentials
-    Login To Application
-    ...    ${NEW_USERNAME}    ${NEW_PASSWORD}
+    Login To Application    ${NEW_USERNAME}    ${NEW_PASSWORD}

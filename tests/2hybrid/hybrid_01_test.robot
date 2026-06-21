@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../../resources/pages/account_page.robot
 Resource    ../../resources/pages/hybrid_01_page.robot
-Resource    ../../resources/keywords/api_keywords.robot
 Resource    ../../variables/login_details.robot
 Resource    ../../resources/pages/login_page.robot
 Resource    ../../resources/keywords/common_resources.robot

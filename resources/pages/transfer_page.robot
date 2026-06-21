@@ -5,13 +5,13 @@ Resource    ../../resources/keywords/api_keywords.robot
 
 *** Keywords ***
 Transfer Funds
-    [Documentation]    Transfer funds between two accounts using dropdown positions
+    [Documentation]    Transfer funds between two accounts
     [Arguments]    ${amount}    ${from_index}    ${to_index}
     Wait Until Element Is Visible    ${transfer_funds}    10s
     Click Element    ${transfer_funds}
-    Wait Until Element Is Visible    ${transfer_amount}    10s
+    Wait Until Element Is Visible    ${transfer_amount}     10s
     Wait Until Element Is Visible       xpath=//select[@id='fromAccountId']/option      10s
-    Wait Until Element Is Visible       xpath=//select[@id='toAccountId']/option        10s
+    Wait Until Element Is Visible       xpath=//select[@id='toAccountId']/option    10s
     Select From List By Index    ${transfer_from}    ${from_index}
     ${from_account_id}=    Get Selected List Value    ${transfer_from}
     Select From List By Index    ${transfer_to}    ${to_index}
@@ -37,7 +37,7 @@ Transfer Funds
     Log To Console    DEST_BALANCE_BEFORE=${DEST_BALANCE_BEFORE}
 
 Verify Transfer Details Displayed
-    [Documentation]    Verify transfer details are displayed after a successful transfer
+    [Documentation]    Verify transfer details are displayed after successful transfer
     Element Should Be Visible    ${result}
     Element Should Be Visible    ${transfer_full_details}
     Element Should Be Visible    ${funds_message}
